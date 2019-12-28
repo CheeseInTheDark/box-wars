@@ -1,0 +1,1 @@
+execute at @e[tag=tank_root,tag=green] run tp @e[tag=gun_root,tag=green]  ^ ^5 ^-1
