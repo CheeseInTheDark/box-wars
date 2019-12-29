@@ -1,5 +1,13 @@
-#Run as green gun root marker
-execute at @e[tag=gun_forward,tag=green] run execute at @p[distance=0..0.99] run execute at @s rotated as @s run tp @s[x_rotation=-60..-3] ~ ~ ~ ~ ~3
-execute at @e[tag=gun_back,tag=green] run execute at @p[distance=0..0.999] run execute at @s rotated as @s run tp @s[x_rotation=-57..0] ~ ~ ~ ~ ~-3
-execute at @e[tag=gun_left,tag=green] run execute at @p[distance=0..0.999] run execute at @s rotated as @s run tp @s ~ ~ ~ ~-5 ~
-execute at @e[tag=gun_right,tag=green] run execute at @p[distance=0..0.99] run execute at @s rotated as @s run tp @s ~ ~ ~ ~5 ~
+#Run as gun root
+
+#Down
+execute at @p[tag=green,tag=gunner,nbt={SelectedItemSlot:1}] run execute at @s rotated as @s run tp @s[x_rotation=-60..-1] ~ ~ ~ ~ ~1
+
+#Up
+execute at @p[tag=green,tag=gunner,nbt={SelectedItemSlot:7}] run execute at @s rotated as @s run tp @s[x_rotation=-59..0] ~ ~ ~ ~ ~-1
+
+#Left
+execute at @p[tag=green,tag=gunner,nbt={SelectedItemSlot:0}] run execute at @s rotated as @s run tp @s ~ ~ ~ ~-2 ~
+
+#Right
+execute at @p[tag=green,tag=gunner,nbt={SelectedItemSlot:8}] run execute at @s rotated as @s run tp @s ~ ~ ~ ~2 ~
