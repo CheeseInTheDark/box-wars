@@ -21,17 +21,13 @@ execute unless entity @p[tag=driver,tag=green,nbt={SelectedItemSlot:3}] as @e[ta
 ###########################################
 
 # Forward
-execute if entity @e[tag=forward_counter,tag=green,x=0.5,z=0.5,y=10,distance=..0.1] as @e[tag=tank_root,tag=green] at @e[tag=tank_root,tag=green] if blocks ^2 ^ ^4 ^-2 ^1 ^4 0 254 0 all run tp ^ ^ ^1
-execute if entity @e[tag=forward_counter,tag=green,x=0.5,z=0.5,y=10,distance=..0.1] run tp @e[tag=forward_counter,tag=green] 0 0 0
+execute if entity @e[tag=forward_counter,tag=green,x=0.5,z=0.5,y=10,distance=..0.1] run function main:movement/move-forward-green
 
 # Backward
-execute if entity @e[tag=reverse_counter,tag=green,x=0.5,z=0.5,y=10,distance=..0.1] as @e[tag=tank_root,tag=green] at @e[tag=tank_root,tag=green] if blocks ^2 ^ ^-4 ^-2 ^1 ^-4 0 254 0 all run tp ^ ^ ^-1
-execute if entity @e[tag=reverse_counter,tag=green,x=0.5,z=0.5,y=10,distance=..0.1] run tp @e[tag=reverse_counter,tag=green] 0 0 0
+execute if entity @e[tag=reverse_counter,tag=green,x=0.5,z=0.5,y=10,distance=..0.1] run function main:movement/move-back-green
 
 # Left
-execute if entity @e[tag=left_turn_counter,tag=green,x=0.5,z=0.5,y=15,distance=..0.1] as @e[tag=tank_root,tag=green] at @e[tag=tank_root,tag=green] if blocks ^3 ^ ^3 ^3 ^1 ^-3 0 254 0 all if blocks ^-3 ^ ^3 ^-3 ^1 ^-3 0 254 0 all run tp @s ~ ~ ~ facing ^1 ^ ^
-execute if entity @e[tag=left_turn_counter,tag=green,x=0.5,z=0.5,y=15,distance=..0.1] run tp @e[tag=left_turn_counter,tag=green] 0 0 0
+execute if entity @e[tag=left_turn_counter,tag=green,x=0.5,z=0.5,y=15,distance=..0.1] run function main:movement/rotate-left-green
 
 # Right
-execute if entity @e[tag=right_turn_counter,tag=green,x=0.5,z=0.5,y=15,distance=..0.1] as @e[tag=tank_root,tag=green] at @e[tag=tank_root,tag=green] if blocks ^3 ^ ^3 ^3 ^1 ^-3 0 254 0 all if blocks ^-3 ^ ^3 ^-3 ^1 ^-3 0 254 0 all run tp @s ~ ~ ~ facing ^-1 ^ ^
-execute if entity @e[tag=right_turn_counter,tag=green,x=0.5,z=0.5,y=15,distance=..0.1] run tp @e[tag=right_turn_counter,tag=green] 0 0 0
+execute if entity @e[tag=right_turn_counter,tag=green,x=0.5,z=0.5,y=15,distance=..0.1] run function main:movement/rotate-right-green

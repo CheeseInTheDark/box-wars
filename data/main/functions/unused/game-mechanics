@@ -1,0 +1,16 @@
+Two players in each tank
+Start with two tanks, ideally up to 16
+One player is the gunner/commander, the other is the driver
+Commander sits on top of tank and aims and fires the gun
+Driver sits within the tank
+
+Easiest gun implementation: 
+  Player with a bow
+  Bow is unbreakable
+  Bow has infinity
+  Fired arrows are replaced by fireballs
+
+Map bounds:
+ -60 to 60
+
+ 121 blocks

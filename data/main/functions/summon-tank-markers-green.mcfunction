@@ -1,7 +1,7 @@
 #Run positioned as green tank root marker
 
 #Position gun markers where gun is
-summon minecraft:armor_stand ^ ^5 ^-1 {Tags:["gun", "gun_root", "green"], Marker: 1, Invisible: 1}
+summon minecraft:armor_stand ^ ^5 ^-1 {Tags:["gun", "gun_root", "green"], Marker: 1, Invisible: 0}
 summon minecraft:armor_stand ^ ^5 ^ {Tags:["gun", "gun_forward", "green"], Marker: 1, Invisible: 1}
 summon minecraft:armor_stand ^ ^5 ^-2 {Tags:["gun", "gun_back", "green"], Marker: 1, Invisible: 1}
 summon minecraft:armor_stand ^1 ^5 ^-1 {Tags:["gun", "gun_left", "green"], Marker: 1, Invisible: 1}
