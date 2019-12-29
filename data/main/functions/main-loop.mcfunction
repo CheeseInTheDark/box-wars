@@ -1,13 +1,13 @@
-execute at @e[tag=gun_root,tag=green] as @e[tag=gun_root,tag=green] run function main:gun/erase-gun-green
-function main:record-damage-green
-function main:erase-tank-green
+# Erase gun
+function main:gun/erase-gun-green
+function main:gun/erase-gun-red
 
 # Update tank
-function main:update-tank-root-green
-execute at @e[tag=gun_root,tag=green] as @e[tag=gun_root,tag=green] run function main:update-gun-green
+function main:update-tank-position-green
+function main:update-tank-position-red
+function main:update-gun-green
+function main:update-gun-red
 
-# Redraw tank in new location
-function main:draw-tank-green
-execute as @e[tag=gun_root,tag=green] run function main:gun/draw-gun-green
-
-# Fire if applicable
+# Redraw gun
+function main:gun/draw-gun-green
+function main:gun/draw-gun-red

@@ -1,0 +1,1 @@
+execute as @e[tag=gun_root,tag=red] run function main:gun/erase-gun

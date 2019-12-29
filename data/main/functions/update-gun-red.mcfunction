@@ -1,16 +1,3 @@
-#Run as red gun root marker
-execute at @s rotated as @s run setblock ^ ^ ^1.4 minecraft:air
-execute at @s rotated as @s run setblock ^ ^ ^2 minecraft:air
-execute at @s rotated as @s run setblock ^ ^ ^3 minecraft:air
-execute at @e[tag=gun_forward,tag=red] run execute at @p[distance=0..0.99999999] run execute at @s rotated as @s run tp @s[x_rotation=-60..-3] ~ ~ ~ ~ ~3
-execute at @e[tag=gun_back,tag=red] run execute at @p[distance=0..0.99999999] run execute at @s rotated as @s run tp @s[x_rotation=-57..0] ~ ~ ~ ~ ~-3
-execute at @e[tag=gun_left,tag=red] run execute at @p[distance=0..0.99999999] run execute at @s rotated as @s run tp @s ~ ~ ~ ~-5 ~
-execute at @e[tag=gun_right,tag=red] run execute at @p[distance=0..0.99999999] run execute at @s rotated as @s run tp @s ~ ~ ~ ~5 ~
-execute at @s rotated as @s run tp @p[sort=nearest,tag=red] ~ ~ ~ ~ ~
-execute at @s rotated as @s run tp @e[tag=gun_right,tag=red] ^-1 ^ ^ ~ ~
-execute at @s rotated as @s run tp @e[tag=gun_left,tag=red] ^1 ^ ^ ~ ~
-execute at @s rotated as @s run tp @e[tag=gun_forward,tag=red] ^ ^ ^1 ~ ~
-execute at @s rotated as @s run tp @e[tag=gun_back,tag=red] ^ ^ ^-1 ~ ~
-execute at @s rotated as @s run setblock ^ ^ ^1.4 minecraft:gray_concrete
-execute at @s rotated as @s run setblock ^ ^ ^2 minecraft:gray_concrete
-execute at @s rotated as @s run setblock ^ ^ ^3 minecraft:gray_concrete
+execute as @e[tag=red,tag=gun_root] at @e[tag=red,tag=gun_root] run function main:gun/update-gun-orientation-red
+execute as @e[tag=red,tag=gun_root] at @e[tag=red,tag=gun_root] run function main:gun/update-gunner-position-red
+execute as @e[tag=red,tag=gun_root] at @e[tag=red,tag=gun_root] run function main:gun/update-gun-fire-state-red
