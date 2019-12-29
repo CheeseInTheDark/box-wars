@@ -31,3 +31,5 @@ execute if entity @e[tag=left_turn_counter,tag=red,x=0.5,z=0.5,y=15,distance=..0
 
 # Right
 execute if entity @e[tag=right_turn_counter,tag=red,x=0.5,z=0.5,y=15,distance=..0.1] run function main:movement/rotate-right-red
+
+function main:movement/update-driver-position-red

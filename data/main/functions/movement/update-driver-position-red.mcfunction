@@ -1,0 +1,1 @@
+execute at @e[tag=tank_root,tag=red] run tp @p[tag=driver,tag=red] ^ ^2 ^1
