@@ -1,14 +1,31 @@
 team add green "Green Tank"
-team add red "Brown Tank"
+team add red "Red Tank"
 
-#Setup gunners
-tag @r add gunner
-team join green @e[tag=gunner]
-tag @r[team!=green] add gunner
-team join red @e[tag=gunner,team=red]
+tag @r add working
+tag @p[tag=working] add green
+tag @p[tag=working] add gunner
+tag @p[tag=working] add assigned
+tag @p[tag=working] remove working
 
-#Setup drivers
-tag @r add driver
-team join green @e[tag=driver]
-tag @r[team!=green,team!=red] add driver
-team join red @e[tag=driver,team=red]
+tag @r[tag=!assigned] add working
+tag @p[tag=working] add green
+tag @p[tag=working] add driver
+tag @p[tag=working] add assigned
+tag @p[tag=working] remove working
+
+tag @r[tag=!assigned] add working
+tag @p[tag=working] add red
+tag @p[tag=working] add gunner
+tag @p[tag=working] add assigned
+tag @p[tag=working] remove working
+
+tag @r[tag=!assigned] add working
+tag @p[tag=working] add red
+tag @p[tag=working] add driver
+tag @p[tag=working] add assigned
+tag @p[tag=working] remove working
+
+tag @a remove assigned
+
+team join red @a[tag=red]
+team join green @a[tag=green]

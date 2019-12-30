@@ -1,0 +1,1 @@
+data modify storage main gameRunning set value 1
