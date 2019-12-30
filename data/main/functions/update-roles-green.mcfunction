@@ -1,0 +1,2 @@
+execute if entity @p[tag=green,tag=gunner,nbt={SelectedItemSlot:5}] unless entity @p[tag=green,tag=driver,nbt={SelectedItemSlot:5}] run function main:roles/swap-green
+execute if entity @p[tag=green,tag=driver,nbt={SelectedItemSlot:4}] unless entity @p[tag=green,tag=gunner,nbt={SelectedItemSlot:4}] run function main:roles/swap-green

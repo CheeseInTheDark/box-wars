@@ -8,11 +8,15 @@ function main:update-tank-position-red
 function main:update-gun-green
 function main:update-gun-red
 
+# Update roles
+function main:update-roles-green
+function main:update-roles-red
+
 # Redraw gun
 function main:gun/draw-gun-green
 function main:gun/draw-gun-red
 
-#Check for deaths
+# Check for deaths
 function main:on-death
 
 kill @e[type=minecraft:item]

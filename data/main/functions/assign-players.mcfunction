@@ -8,14 +8,14 @@ tag @p[tag=working] add assigned
 tag @p[tag=working] remove working
 
 tag @r[tag=!assigned] add working
-tag @p[tag=working] add green
-tag @p[tag=working] add driver
+tag @p[tag=working] add red
+tag @p[tag=working] add gunner
 tag @p[tag=working] add assigned
 tag @p[tag=working] remove working
 
 tag @r[tag=!assigned] add working
-tag @p[tag=working] add red
-tag @p[tag=working] add gunner
+tag @p[tag=working] add green
+tag @p[tag=working] add driver
 tag @p[tag=working] add assigned
 tag @p[tag=working] remove working
 
