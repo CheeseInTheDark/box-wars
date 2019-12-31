@@ -11,10 +11,12 @@ execute unless entity @p[tag=driver,tag=green,nbt={SelectedItemSlot:1}] as @e[ta
 
 # Left turn selected
 execute if entity @p[tag=driver,tag=green,nbt={SelectedItemSlot:0}] as @e[tag=left_turn_counter,tag=green] at @e[tag=left_turn_counter,tag=green] run tp @s ~ ~1 ~
+execute if entity @p[tag=driver,tag=green,nbt={SelectedItemSlot:0}] at @p[tag=driver,tag=green] run tp @p[tag=driver,tag=green] ~ ~ ~ ~-6 ~
 execute unless entity @p[tag=driver,tag=green,nbt={SelectedItemSlot:0}] as @e[tag=left_turn_counter,tag=green] at @e[tag=left_turn_counter,tag=green] run tp @s ~ 0 ~
 
 # Right turn selected
 execute if entity @p[tag=driver,tag=green,nbt={SelectedItemSlot:3}] as @e[tag=right_turn_counter,tag=green] at @e[tag=right_turn_counter,tag=green] run tp @s ~ ~1 ~
+execute if entity @p[tag=driver,tag=green,nbt={SelectedItemSlot:3}] at @p[tag=driver,tag=green] run tp @p[tag=driver,tag=green] ~ ~ ~ ~6 ~
 execute unless entity @p[tag=driver,tag=green,nbt={SelectedItemSlot:3}] as @e[tag=right_turn_counter,tag=green] at @e[tag=right_turn_counter,tag=green] run tp @s ~ 0 ~
 
 # Move tank root if counters meet threshold
