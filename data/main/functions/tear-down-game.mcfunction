@@ -12,3 +12,4 @@ tag @a remove driver
 tag @a remove red
 tag @a remove green
 kill @e[type=armor_stand]
+data modify storage main gameExists set value 0

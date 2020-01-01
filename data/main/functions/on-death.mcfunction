@@ -1,5 +1,7 @@
 tellraw @a[scores={deaths=1..}] {"color":"white","text":"You died!"}
 gamemode spectator @a[scores={deaths=1..}]
+tp @a[scores={deaths=1..}] 0 50 0 0 90
+
 execute as @a[scores={deaths=1..},tag=green] at @e[tag=dead_player_count,tag=green] run tp @e[tag=dead_player_count,tag=green] ~ ~-1 ~
 execute as @a[scores={deaths=1..},tag=red] at @e[tag=dead_player_count,tag=red] run tp @e[tag=dead_player_count,tag=red] ~ ~-1 ~
 

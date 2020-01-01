@@ -1,3 +1,4 @@
+data modify storage main gameExists set value 1
 function main:assign-players
 function main:setup-variables
 function main:copy-pristine-tanks-green
