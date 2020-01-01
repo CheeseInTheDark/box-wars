@@ -11,8 +11,12 @@ function main:movement/draw-tank-red
 function main:gun/draw-gun-green
 function main:gun/draw-gun-red
 
-function main:equip-gunners
-function main:equip-drivers
+function main:equip-gunners-green
+function main:equip-drivers-green
+
+function main:equip-gunners-red
+function main:equip-drivers-red
+
 gamemode adventure @a
 title @a subtitle "In five seconds"
 title @a title "Game Start!"
