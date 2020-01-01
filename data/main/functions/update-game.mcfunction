@@ -1,3 +1,7 @@
+# Record gun damages
+function main:record-damage/record-gun-damage-green
+function main:record-damage/record-gun-damage-red
+
 # Erase gun
 function main:gun/erase-gun-green
 function main:gun/erase-gun-red
