@@ -18,6 +18,9 @@ function main:equip-drivers-green
 function main:equip-gunners-red
 function main:equip-drivers-red
 
+function main:give-armor
+function main:restore-health
+
 gamemode adventure @a
 title @a subtitle "In five seconds"
 title @a title "Game Start!"

@@ -1,0 +1,1 @@
+effect give @a minecraft:instant_health 1 100
