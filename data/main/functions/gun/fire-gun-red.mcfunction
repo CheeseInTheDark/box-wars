@@ -7,8 +7,12 @@ execute at @s run summon minecraft:fireball ^ ^ ^6 {power:[0d,0d,0d],direction:[
 #Make armor stand at origin match gun's rotation
 execute rotated as @s as @e[tag=reference,limit=1] run tp @s 0.0 0.0 0.0 ~ ~
 
-#Create an armor stand slightly ahead of origin in direction of gun's rotation
-execute at @e[tag=reference] run summon minecraft:armor_stand ^ ^ ^2.5 {Tags:["temp"], NoGravity:1, Marker:1}
+#Create an armor stand slightly ahead of origin
+execute at @e[tag=reference] run summon minecraft:armor_stand ^ ^ ^0.5 {Tags:["temp"], NoGravity:1, Marker:1}
+
+#Calculate power of fireball from gun power
+execute at @e[tag=gun_power,tag=red] run tp @e[tag=counter] ~ ~ ~
+function main:gun/calculate-fireball-power
 
 #Add gravity to fireball trajectory
 data modify entity @e[tag=current_fireball,limit=1] power set value [0.0,-0.1,0.0]
