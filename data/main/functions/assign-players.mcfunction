@@ -33,8 +33,10 @@ team join green @a[tag=green]
 team modify red nametagVisibility hideForOtherTeams
 team modify green nametagVisibility hideForOtherTeams
 
-tellraw @p[tag=green,tag=driver] [{"color":"green","text":"You are the green driver, your gunner is "},{"selector":"@p[tag=green,tag=gunner]"}]
-tellraw @p[tag=green,tag=gunner] [{"color":"green","text":"You are the green gunner, your driver is "},{"selector":"@p[tag=green,tag=driver]"}]
+tellraw @p[tag=green] [{"color":"green", "text": "You are on team GREEN"}]
+tellraw @p[tag=green] [{"color":"green","text":"Gunner: "},{"selector":"@p[tag=green,tag=gunner]"}]
+tellraw @p[tag=green] [{"color":"green","text":"Driver: "},{"selector":"@p[tag=green,tag=driver]"}]
 
-tellraw @p[tag=red,tag=driver] [{"color":"red","text":"You are the red driver, your gunner is "},{"selector":"@p[tag=red,tag=gunner]"}]
-tellraw @p[tag=red,tag=gunner] [{"color":"red","text":"You are the red gunner, your driver is "},{"selector":"@p[tag=red,tag=driver]"}]
+tellraw @p[tag=red] [{"color":"red", "text": "You are on team RED"}]
+tellraw @p[tag=red] [{"color":"red","text":"Gunner: "},{"selector":"@p[tag=red,tag=gunner]"}]
+tellraw @p[tag=red] [{"color":"red","text":"Driver: "},{"selector":"@p[tag=red,tag=driver]"}]
