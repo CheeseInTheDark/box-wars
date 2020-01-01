@@ -1,5 +1,5 @@
 clear @a
-gamemode creative @a
+gamemode adventure @a
 function main:movement/erase-tank-red
 function main:movement/erase-tank-green
 function main:movement/erase-gun-red
