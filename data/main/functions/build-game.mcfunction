@@ -7,6 +7,8 @@ function main:summon-tank-roots
 execute at @e[tag=tank_root,tag=green] run function main:summon-tank-markers-green
 execute at @e[tag=tank_root,tag=red] run function main:summon-tank-markers-red
 
+gamemode adventure @a
+
 function main:movement/draw-tank-green
 function main:movement/draw-tank-red
 function main:gun/draw-gun-green
@@ -21,7 +23,6 @@ function main:equip-drivers-red
 function main:give-armor
 function main:restore-health
 
-gamemode adventure @a
 title @a subtitle "In five seconds"
 title @a title "Game Start!"
 schedule function main:start-game 5s
